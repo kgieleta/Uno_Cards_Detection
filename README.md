@@ -23,3 +23,17 @@ The goal was to develop an algorithm for detecting and recognizing UNO cards in 
 
 - C++  
 - OpenCV  
+
+## Results
+
+### detection goal: all cards
+<img width="730" height="587" alt="all" src="https://github.com/user-attachments/assets/e0b88e67-7501-4f59-b1c3-0304272db1ea" />
+
+### detection goal: only yellow cards
+<img width="727" height="650" alt="yellow" src="https://github.com/user-attachments/assets/80c29fce-0a2a-47fc-8c6e-749f8bf06c9f" />
+
+### blured image, detection goal: all cards
+<img width="712" height="788" alt="all_b" src="https://github.com/user-attachments/assets/827cb47d-7cde-4733-89fa-caa9651add3b" />
+
+### salt and pepper on image, detection goal: all cards
+<img width="700" height="634" alt="all_s" src="https://github.com/user-attachments/assets/1629b971-2fd3-494b-9c2b-f69181542ebe" />
