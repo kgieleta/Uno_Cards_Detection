@@ -1,24 +1,25 @@
-# Detekcja kart UNO na obrazie
+# UNO Card Detection in Images  
 
-Projekt zrealizowany w ramach kursu **Cyfrowe Metody Przetwarzania Obrazu (CPO)**. Celem było stworzenie algorytmu detekcji i rozpoznania kart UNO na obrazach zawierających różne zakłócenia (rozmycie, gradient, sól i pieprz), z wyznaczeniem środka kart specjalnych oraz sumowaniem wartości liczbowych pozostałych kart.
+This project was carried out as part of the **Digital Image Processing (CPO)** course.  
+The goal was to develop an algorithm for detecting and recognizing UNO cards in images affected by various types of noise (blur, gradient, salt-and-pepper), including determining the center of special cards and summing the numerical values of the remaining cards.  
 
-## Funkcjonalności
+## Features  
 
-- Wczytanie obrazu ze ścieżki podanej przez użytkownika
-- Przetwarzanie wstępne: median blur → konwersja do szarości → Gaussian blur → adaptacyjne progowanie → morfologia (dylacja, erozja)
-- Segmentacja kart na podstawie konturów zewnętrznych
-- Wyznaczenie ROI dla detekcji kształtu oraz koloru
-- Detekcja koloru karty (red, green, blue, yellow)
-- Detekcja kształtu przy użyciu:
-  - liczby okręgów (HoughCircles)
-  - kolistości figury (z konturu)
-  - pola powierzchni konturu
-- Klasyfikacja znaków: `2`, `3`, `4`, `reverse`, `stop`
-- Obliczanie sumy kart liczbowych danego koloru
-- Wypisywanie współrzędnych środka karty dla kart specjalnych (`stop`, `reverse`)
-- Obsługa 4 scen: bez zakłóceń, z blurem, gradientem oraz solą i pieprzem (łącznie 16 obrazów)
+- Load an image from a user-provided path  
+- Preprocessing: median blur → grayscale conversion → Gaussian blur → adaptive thresholding → morphology (dilation, erosion)  
+- Card segmentation based on external contours  
+- ROI extraction for shape and color detection  
+- Card color detection (red, green, blue, yellow)  
+- Shape detection using:  
+  - number of circles (HoughCircles)  
+  - contour circularity  
+  - contour area  
+- Symbol classification: `2`, `3`, `4`, `reverse`, `stop`  
+- Calculation of the sum of numeric cards by color  
+- Printing the coordinates of the card center for special cards (`stop`, `reverse`)  
+- Support for 4 scenarios: no noise, blur, gradient, and salt-and-pepper (16 images in total)  
 
-## Technologie
+## Technologies  
 
-- C++
-- OpenCV
+- C++  
+- OpenCV  
