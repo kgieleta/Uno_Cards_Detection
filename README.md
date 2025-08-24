@@ -1,6 +1,6 @@
 # UNO Card Detection in Images  
 
-This project was carried out as part of the **Digital Image Processing (CPO)** course.  
+This project was carried out as part of the **Digital Image Processing** course.  
 The goal was to develop an algorithm for detecting and recognizing UNO cards in images affected by various types of noise (blur, gradient, salt-and-pepper), including determining the center of special cards and summing the numerical values of the remaining cards.  
 
 ## Features  
@@ -37,3 +37,4 @@ The goal was to develop an algorithm for detecting and recognizing UNO cards in 
 
 ### salt and pepper on image, detection goal: all cards
 <img width="700" height="634" alt="all_s" src="https://github.com/user-attachments/assets/1629b971-2fd3-494b-9c2b-f69181542ebe" />
+
